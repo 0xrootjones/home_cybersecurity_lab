@@ -1,12 +1,12 @@
-Home Cybersecurity Lab – Setup Notes
+**Home Cybersecurity Lab – Setup Notes**
 
-**This document outlines the components and configuration of my personal cybersecurity home lab, designed to simulate a small-scale SOC (Security Operations Center) environment for practicing detection, monitoring, and response.
+>>This document outlines the components and configuration of my personal cybersecurity home lab, designed to simulate a small-scale SOC (Security Operations Center) environment for practicing detection, monitoring, and response.
 
 ---
 
-Infrastructure Overview
+**Infrastructure Overview**
 
-- **Proxmox VE** – Bare-metal hypervisor hosting the full lab stack  
+- Proxmox VE – Bare-metal hypervisor hosting the full lab stack  
 - pfSense – Virtualized firewall with VLAN support, NAT, and VPN  
 - AdGuard Home – DNS filtering for ads and trackers  
 - Wazuh – SIEM server on Ubuntu 22.04  
@@ -16,14 +16,16 @@ Infrastructure Overview
 
 ---
 
-Network Design
+**Network Design**
 
+ '''
  [WAN]
       |
     [pfSense VM]
       ├── VLAN 10: Internal LAN (Ubuntu + Windows)
       ├── VLAN 20: Secure Admin Zone
       └── VLAN 30: DNS Filtering Zone (AdGuard)
+'''
 
 - pfSense assigns IP addresses via DHCP on each VLAN  
 - VLAN 10 is used for general endpoint traffic (Windows and Ubuntu VMs)  
@@ -34,7 +36,7 @@ Network Design
 
 ---
 
-Lab Goals
+**Lab Goals**
 
 - Learn SIEM fundamentals and endpoint monitoring  
 - Build and test custom detection rules using Sysmon  
@@ -44,7 +46,7 @@ Lab Goals
 
 ---
 
-Current Status
+**Current Status**
 
 - [x] pfSense installed with multi-VLAN config  
 - [x] AdGuard running and filtering DNS  
@@ -54,7 +56,7 @@ Current Status
 
 ---
 
-Tools Used
+**Tools Used**
 
 - Proxmox VE  
 - pfSense  
@@ -67,7 +69,7 @@ Tools Used
 
 ---
 
-Next Steps
+**Next Steps**
 
 - Forward logs from macOS (via syslog or other agent)  
 - Build test PowerShell-based attack to trigger Wazuh alerts  
