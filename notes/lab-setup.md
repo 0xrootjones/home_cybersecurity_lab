@@ -2,7 +2,9 @@ Home Cybersecurity Lab – Setup Notes
 
 **This document outlines the components and configuration of my personal cybersecurity home lab, designed to simulate a small-scale SOC (Security Operations Center) environment for practicing detection, monitoring, and response.
 
-I. Infrastructure Overview
+---
+
+Infrastructure Overview
 
 - Proxmox VE – Bare-metal hypervisor hosting the full lab stack  
 - pfSense – Virtualized firewall with VLAN support, NAT, and VPN  
@@ -12,7 +14,9 @@ I. Infrastructure Overview
 - Windows 10 VM – Used to simulate endpoints and user behavior  
 - Mac Mini – Additional endpoint for cross-platform testing
 
-II. Network Design
+---
+
+Network Design
 
  [WAN]
       |
@@ -28,7 +32,9 @@ II. Network Design
 - Inter-VLAN traffic is restricted via pfSense firewall rules  
 - Syslog and Wazuh agents forward logs to the SIEM over secure channels
 
-III. Lab Goals
+---
+
+Lab Goals
 
 - Learn SIEM fundamentals and endpoint monitoring  
 - Build and test custom detection rules using Sysmon  
@@ -36,7 +42,9 @@ III. Lab Goals
 - Use Obsidian.md to document workflows and detections  
 - Eventually script routine checks and alerts
 
-IV. Current Status
+---
+
+Current Status
 
 - [x] pfSense installed with multi-VLAN config  
 - [x] AdGuard running and filtering DNS  
@@ -44,7 +52,9 @@ IV. Current Status
 - [ ] Create and test custom detection rules  
 - [ ] Enable alert forwarding to external system (email/webhook)
 
-V. Tools Used
+---
+
+Tools Used
 
 - Proxmox VE  
 - pfSense  
@@ -55,7 +65,9 @@ V. Tools Used
 - VS Code  
 - Windows 10, Ubuntu 22.04, macOS
 
-VI. Next Steps
+---
+
+Next Steps
 
 - Forward logs from macOS (via syslog or other agent)  
 - Build test PowerShell-based attack to trigger Wazuh alerts  
