@@ -6,7 +6,7 @@ Home Cybersecurity Lab – Setup Notes
 
 Infrastructure Overview
 
-- Proxmox VE – Bare-metal hypervisor hosting the full lab stack  
+- **Proxmox VE** – Bare-metal hypervisor hosting the full lab stack  
 - pfSense – Virtualized firewall with VLAN support, NAT, and VPN  
 - AdGuard Home – DNS filtering for ads and trackers  
 - Wazuh – SIEM server on Ubuntu 22.04  
