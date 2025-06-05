@@ -18,14 +18,14 @@
 
 **Network Design**
 
- '''
+ ```
  [WAN]
       |
     [pfSense VM]
       ├── VLAN 10: Internal LAN (Ubuntu + Windows)
       ├── VLAN 20: Secure Admin Zone
       └── VLAN 30: DNS Filtering Zone (AdGuard)
-'''
+```
 
 - pfSense assigns IP addresses via DHCP on each VLAN  
 - VLAN 10 is used for general endpoint traffic (Windows and Ubuntu VMs)  
