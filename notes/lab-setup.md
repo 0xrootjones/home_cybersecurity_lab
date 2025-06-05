@@ -1,6 +1,6 @@
 **Home Cybersecurity Lab – Setup Notes**
 
->>This document outlines the components and configuration of my personal cybersecurity home lab, designed to simulate a small-scale SOC (Security Operations Center) environment for practicing detection, monitoring, and response.
+>This document outlines the components and configuration of my personal cybersecurity home lab, designed to simulate a small-scale SOC (Security Operations Center) environment for practicing detection, monitoring, and response.
 
 ---
 
